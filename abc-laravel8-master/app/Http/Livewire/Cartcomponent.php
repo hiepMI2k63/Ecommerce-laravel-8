@@ -112,7 +112,7 @@ class Cartcomponent extends Component
             return redirect()->route('login');
         }
     }
-//git
+//gitgit
     public function setAmountForCheckOut()
     {
 
