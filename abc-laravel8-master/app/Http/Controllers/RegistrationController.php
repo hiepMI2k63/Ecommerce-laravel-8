@@ -25,24 +25,26 @@ class RegistrationController extends Controller
             [
                 "name.required" => "Tên không được để trống",
                 "email.required" => "Email không được để trống",
-                "email.unique" => "Email đã tồn tại",
+                "email.unique" => "Email đã tồn tại nhé baby",
                 "email.email" => "Email không đúng định dạng",
                 "password.required" => "Mật khẩu không được để trống",
                 "password.confirmed" => "Nhập lại mật khẩu không chính xác",
             ]
         );
         $password = bcrypt($request->password);
-        $request->merge(['password' => $password]);
+        $request->merge(['password' => $password,
+                            // 'test' => '12312', thêm parameter vào trong parameters
+    ]);
 
         $dataArray = array(
             "name" => $request->name,
             "email" => $request->email,
+
             "password" => $request->password
         );
 
         $user = User::create($dataArray);
         auth()->login($user);
-
         return redirect()->route('home');;
 
     }

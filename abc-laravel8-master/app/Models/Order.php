@@ -9,13 +9,25 @@ class Order extends Model
 {
     use HasFactory;
 
-    protected $table = "orders";
+    protected $table = 'orders';
+
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-    public function orderItems()
+
+    public function orderIteam()
     {
         return $this->hasMany(OrderItem::class);
+    }
+
+    public function shipping()
+    {
+        return $this->hasOne(Shipping::class);
+    }
+
+    public function trancision()
+    {
+        return $this->hasOne(Trancision::class);
     }
 }

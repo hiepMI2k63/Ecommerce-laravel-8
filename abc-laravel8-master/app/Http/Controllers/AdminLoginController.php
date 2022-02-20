@@ -27,8 +27,8 @@ class AdminLoginController extends Controller
             'email'=>$request->txtEmail,
             'password' => $request->txtPassword,
         ];
-
-        if (Auth::attempt($login,$request->chkRemember)){
+// https://laravel.com/docs/8.x/authentication#authenticating-users
+        if (Auth::attempt($login)){
             $user = Auth::user();
             $request->session()->regenerate();
                 if ((($user->level==0))) {

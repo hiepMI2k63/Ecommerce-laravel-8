@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{url('youtube')}}/file/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/file/images/favicon.ico">
     <link
         href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{url('youtube')}}/file/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="{{url('youtube')}}/file/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{url('youtube')}}/file/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="{{url('youtube')}}/file/css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="{{url('youtube')}}/file/css/chosen.min.css">
-    <link rel="stylesheet" type="text/css" href="{{url('youtube')}}/file/css/flexslider.css">
-    <link rel="stylesheet" type="text/css" href="{{url('youtube')}}/file/css/style.css">
-    <link rel="stylesheet" type="text/css" href="{{url('youtube')}}/file/css/color-01.css">
+    <link rel="stylesheet" type="text/css" href="/file/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/file/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/file/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/file/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="/file/css/chosen.min.css">
+    <link rel="stylesheet" type="text/css" href="/file/css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="/file/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/file/css/color-01.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css" integrity="sha512-KRrxEp/6rgIme11XXeYvYRYY/x6XPGwk0RsIC6PyMRc072vj2tcjBzFmn939xzjeDhj0aDO7TDMd7Rbz3OEuBQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
@@ -157,28 +157,46 @@
 
                                         @endif
 
+
+
                                     @else
+
                                         <li class="menu-item"><a title="Register or Login"
                                                 href="{{ route('login') }}">Login</a>
                                         </li>
                                         <li class="menu-item"><a title="Register or Login"
                                                 href="{{ route('register') }}">Register</a></li>
+
                                     @endif
+
+
+
+
+
+
+
                                     @endif
 
                                 </ul>
                             </div>
                         </div>
                     </div>
+
+                    <!--header11111111111111-->
+
+
+
+
+
                     <div class="container">
                         <div class="mid-section main-info-area">
 
                             <div class="wrap-logo-top left-section">
-                                <a href="index.html" class="link-to-home"><img src="{{url('youtube')}}/file/images/Pinnacle_Golf_logo_black.png"
+                                <a href="index.html" class="link-to-home"><img src="/file/images/Pinnacle_Golf_logo_black.png"
                                         alt="mercado"></a>
                             </div>
 
-                            {{-- @livewire('headercomponent') --}}
+                      {{-- @livewire('headercomponent') --}}
 
                             <div class="wrap-icon right-section">
                                 <div class="wrap-icon-section wishlist">
@@ -229,8 +247,8 @@
                                                 class="fa fa-home" aria-hidden="true"></i></a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="{{ route('aboutus') }}" class="link-term mercado-item-title">About
-                                            Us</a>
+                                        {{-- <a href="{{ route('aboutus') }}" class="link-term mercado-item-title">About
+                                            Us</a> --}}
                                     </li>
                                     <li class="menu-item">
                                         <a href="{{ route('shop') }}" class="link-term mercado-item-title">Shop</a>
@@ -414,7 +432,7 @@
                                     <h3 class="item-header">We Using Safe Payments:</h3>
                                     <div class="item-content">
                                         <div class="wrap-list-item wrap-gallery">
-                                            <img src="{{url('youtube')}}/file/images/payment.png" style="max-width: 260px;">
+                                            <img src="/file/images/payment.png" style="max-width: 260px;">
                                         </div>
                                     </div>
                                 </div>
@@ -455,13 +473,13 @@
                                             <ul>
                                                 <li><a href="#" class="link-to-item"
                                                         title="our application on apple store">
-                                                        <figure><img src="{{url('youtube')}}/file/images/brands/apple-store.png"
+                                                        <figure><img src="/file/images/brands/apple-store.png"
                                                                 alt="apple store" width="128" height="36">
                                                         </figure>
                                                     </a></li>
                                                 <li><a href="#" class="link-to-item"
                                                         title="our application on google play store">
-                                                        <figure><img src="{{url('youtube')}}/file/images/brands/google-play-store.png"
+                                                        <figure><img src="/file/images/brands/google-play-store.png"
                                                                 alt="google play store" width="128" height="36">
                                                         </figure>
                                                     </a></li>
@@ -580,15 +598,15 @@
             </div>
         </footer>
 
-        <script src="{{url('youtube')}}/file/js/jquery-1.12.4.minb8ff.js?ver=1.12.4"></script>
-        <script src="{{url('youtube')}}/file/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4"></script>
-        <script src="{{url('youtube')}}/file/js/bootstrap.min.js"></script>
-        <script src="{{url('youtube')}}/file/js/jquery.flexslider.js"></script>
-        {{-- <script src="{{url('youtube')}}/file/js/chosen.jquery.min.js"></script> --}}
-        <script src="{{url('youtube')}}/file/js/owl.carousel.min.js"></script>
-        <script src="{{url('youtube')}}/file/js/jquery.countdown.min.js"></script>
-        <script src="{{url('youtube')}}/file/js/jquery.sticky.js"></script>
-        <script src="{{url('youtube')}}/file/js/functions.js"></script>
+        <script src="/file/js/jquery-1.12.4.minb8ff.js?ver=1.12.4"></script>
+        <script src="/file/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4"></script>
+        <script src="/file/js/bootstrap.min.js"></script>
+        <script src="/file/js/jquery.flexslider.js"></script>
+        {{-- <script src="/file/js/chosen.jquery.min.js"></script> --}}
+        <script src="/file/js/owl.carousel.min.js"></script>
+        <script src="/file/js/jquery.countdown.min.js"></script>
+        <script src="/file/js/jquery.sticky.js"></script>
+        <script src="/file/js/functions.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js" integrity="sha512-EnXkkBUGl2gBm/EIZEgwWpQNavsnBbeMtjklwAa7jLj60mJk932aqzXFmdPKCG6ge/i8iOCK0Uwl1Qp+S0zowg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
